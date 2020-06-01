@@ -8,25 +8,26 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'whle',
       home: Scaffold(
-        // appBar: AppBar(
-        //   title: Text('Welcome - flutter')
-        // ),
-        body: Center(
-          child: Container(
-            child: new Image.network(
-              'https://oimageb3.ydstatic.com/image?id=6541623080344715535&product=adpublish&w=520&h=347'
-              // ,fit: BoxFit.scaleDown,
-              ,color: Colors.greenAccent,
-              colorBlendMode: BlendMode.modulate,
-              // repeat: ImageRepeat.repeat,
-              // repeat: ImageRepeat.repeatX,
-              // repeat: ImageRepeat.repeatY,
-              ),
-            width: 900.0
-            ,height: 200.0
-            ,color: Colors.lightBlue
-          )
+        appBar: AppBar(
+          title: Text('Welcome - flutter')
         ),
+        body: new ListView(
+          children: <Widget>[
+            new ListTile(
+              leading: new Icon(Icons.perm_camera_mic),
+              title: new Text('perm')
+            ),
+            new ListTile(
+              leading: new Icon(Icons.add_call),
+              title: new Text('perm')
+            ),
+            new ListTile(
+              leading: new Icon(Icons.access_time),
+              title: new Text('perm')
+            ),
+            
+          ]
+        )
 
       ),
     );
