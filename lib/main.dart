@@ -13,22 +13,18 @@ class MyApp extends StatelessWidget {
         // ),
         body: Center(
           child: Container(
-            child: new Text('hello ', style: TextStyle(fontSize: 40.0)),
-            alignment: Alignment.center,
-            width: 500.0,
-            height: 400.0,
-            // padding: 
-            // color: Colors.lightBlue,
-            padding: const EdgeInsets.fromLTRB(10.0,20.0,30.0,40.0),
-            margin: const EdgeInsets.all(10.0),
-            decoration: new BoxDecoration(
-              gradient: const LinearGradient(
-                colors: [Colors.lightBlue, Colors.greenAccent, Colors.red]
+            child: new Image.network(
+              'https://oimageb3.ydstatic.com/image?id=6541623080344715535&product=adpublish&w=520&h=347'
+              // ,fit: BoxFit.scaleDown,
+              ,color: Colors.greenAccent,
+              colorBlendMode: BlendMode.modulate,
+              // repeat: ImageRepeat.repeat,
+              // repeat: ImageRepeat.repeatX,
+              // repeat: ImageRepeat.repeatY,
               ),
-              border: Border.all(width: 2.0, color: Colors.red)
-            )
-
-
+            width: 900.0
+            ,height: 200.0
+            ,color: Colors.lightBlue
           )
         ),
 
