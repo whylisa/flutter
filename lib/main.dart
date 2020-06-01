@@ -11,22 +11,32 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Welcome - flutter')
         ),
-        body: new ListView(
-          children: <Widget>[
-            new ListTile(
-              leading: new Icon(Icons.perm_camera_mic),
-              title: new Text('perm')
-            ),
-            new ListTile(
-              leading: new Icon(Icons.add_call),
-              title: new Text('perm')
-            ),
-            new ListTile(
-              leading: new Icon(Icons.access_time),
-              title: new Text('perm')
-            ),
-            
-          ]
+        body: Center(
+          child: Container (
+            height: 200.0,
+            child: new ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget> [
+                new Container(
+                  width: 180.0,
+                  color: Colors.lightBlue,
+                ),
+                new Container(
+                  width: 180.0,
+                  color: Colors.amber
+                ),
+                new Container(
+                  width: 180.0,
+                  color: Colors.deepOrange
+                ),
+                new Container(
+                  width: 180.0,
+                  color: Colors.red
+                )
+
+              ]
+            )
+          )
         )
 
       ),
