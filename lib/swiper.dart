@@ -8,8 +8,9 @@ class SwipersShow extends StatefulWidget {
 class _SwipersShowState extends State<SwipersShow> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: new Swiper(
+    return Container(
+      height: 160,
+      child: new Swiper(
         itemBuilder: (BuildContext context,int index){
           return new Image.network("http://via.placeholder.com/350x150",);
         },

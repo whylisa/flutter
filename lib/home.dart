@@ -3,6 +3,7 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:flutterapp/swiper.dart';
 import 'package:flutterapp/tabstop.dart';
 
+import 'button.dart';
 import 'costom_appbar.dart';
  class Home extends StatefulWidget {
    @override
@@ -15,12 +16,12 @@ import 'costom_appbar.dart';
      return Column(
        children: <Widget>[
          CustomAppBar(),
-         Flexible(
-           child: SwipersShow(),
-         ),
-         Flexible(
-           child: TabsTop(),
-         )
+//         SwipersShow(),
+         MyButton(),
+
+        //  Container(
+        //    child: TabsTop(),
+        //  )
 
 
        ],

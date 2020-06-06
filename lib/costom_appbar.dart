@@ -8,7 +8,7 @@ class CustomAppBar extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(20, paddingTop+10, 20, 5),
       padding: EdgeInsets.fromLTRB(20, 7, 20, 7),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(19),
+        borderRadius: BorderRadius.circular(10),
         color: Colors.white60,
       ),
       child: Row(
