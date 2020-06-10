@@ -25,6 +25,10 @@ class CustomAppBar extends StatelessWidget {
                 color: Colors.grey,
               ),
             ),
+          ),
+          Icon(
+            Icons.pin_drop,
+            color: Colors.lightBlue,
           )
         ],
       ),

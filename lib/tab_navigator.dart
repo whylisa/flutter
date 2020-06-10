@@ -42,8 +42,8 @@ class _TabNavigatorState extends State<TabNavigator> {
         type: BottomNavigationBarType.fixed,
         items:[
           _bottomItem('查找', Icons.search, 0),
-          _bottomItem('CRM', Icons.explore, 1),
-          _bottomItem('消息', Icons.donut_small, 2),
+          _bottomItem('私域', Icons.explore, 1),
+          _bottomItem('消息', Icons.message, 2),
           _bottomItem('我的', Icons.person, 3),
         ]
       )

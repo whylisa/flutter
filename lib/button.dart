@@ -7,7 +7,7 @@ class MyButton extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(20.0,7.0,20.0, 10.0),
       padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
       color: Colors.white,
-      height: 100,
+      height: 400,
       child: Column(
         children: <Widget>[
           Row(
@@ -63,8 +63,8 @@ class MyButton extends StatelessWidget {
           ),
           Divider(
             height: 2,
-            color: Colors.red,
-          )
+            color: Colors.grey,
+          ),
 
         ],
       ),
